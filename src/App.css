@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Qontra;
+    src: url(./Qontra.otf);
+}
+.App{
+    background-color:  rgb(25,26,44);
+    overflow-x: hidden;
+    
+}
+
+#qontra{
+    font-family: Qontra;
+}
+::-webkit-scrollbar{
+    display: none;
+  }
+
+.blur{
+
+      background-color:rgb(60, 64, 133);
+     filter: blur(120px);
+     position: absolute;
+      border-radius: 50%;
+      z-index:0 ;
+
+ }
+ @media screen and (max-width:768px) {
+    .App{
+        overflow-x: hidden;
+        user-scalable:no
+    }
+ }

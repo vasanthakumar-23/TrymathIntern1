@@ -1,0 +1,125 @@
+body{
+    padding-top: 8rem;
+    margin:0;
+    padding: 0;
+    background-color: rgb(25,26,44);
+    
+}
+.reason{
+    margin-top: 7.5rem;
+    height: 120vh;
+    margin-bottom: 2rem;
+}
+.reason>h1{
+    text-align: center;
+    font-size: 59px;
+    margin-bottom: 2rem;
+    color: white;
+    letter-spacing: 5px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.reason>#foo>:nth-child(1){
+    padding-top: 3rem;
+    padding-left: 3rem;
+    object-fit: cover;
+    border-radius: 50px;
+    height: 10rem;
+    width:12rem;
+}
+.reason>div{
+    display: grid;
+    grid-template-columns:5fr 2fr;
+    grid-template-rows: 25%;
+}
+.reason>#foo>:nth-child(2){
+    grid-column: 3/6;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    color: #64CCC5;
+}
+.reason>#foo>:nth-child(3){
+    grid-column: 3/6;
+    font-size: 20px;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    color: white;
+}
+.reason>#zoo>:nth-child(3){
+    
+    grid-column:6/8 ;
+    padding-right: 3rem;
+    object-fit: cover;
+    border-radius: 0 0 0 50px1;
+    height: 10rem;
+    width:12rem;
+}
+.reason>#zoo>:nth-child(2){
+    grid-column: 1/5;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    color: white;
+    white-space: wrap;
+}
+.reason>#zoo>:nth-child(1){
+    grid-column: 1/5;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    color: #64CCCf;
+    white-space: wrap;
+}
+
+.reason>div>h2{
+    font-family: Qontra;
+    letter-spacing: 5px;
+    color: rgb(25,26,44);
+    font-size: 30px;
+}
+@media screen and (max-width:768px) {
+    .reason{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -12rem;
+    }
+    .reason>h1{
+        font-size: 35px;
+    }
+    .reason>div>h2{
+        text-align: left;
+        letter-spacing: 0px;
+        font-size: 25px;
+        position: relative;
+        white-space: nowrap;
+        left: -2rem;
+        font-style: italic;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .reason>div>p{
+        text-align: left;
+        transform: scale(0.6);
+        margin: 0px 0rem;
+    }
+
+    .reason>div>img{
+        display: none;
+        transform: scale(0.8); 
+    }
+    #foo{
+        text-align:left;
+        margin: -1rem -4rem;
+    }
+    #foo>img{
+        position: relative;
+        left: -3.5rem;
+    }
+    #foo>:nth-child(3){
+        transform: scale(0.6);
+        font-style: italic;
+        font-size: 15px;
+    }
+    #zoo{
+        font-style: italic;
+        margin: 0px -4rem;
+        margin-bottom: -3rem;
+    }
+}

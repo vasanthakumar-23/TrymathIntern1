@@ -1,0 +1,93 @@
+.test{
+    height: 60vh;
+    margin-bottom: 14rem;
+    margin-top: 8rem ;
+}
+
+.heading1{
+    
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 6px;
+    text-align: center;
+    font-size: 69px;
+    color: white;
+}
+.bye{
+    margin-top: 7.8rem;
+}
+.reviews{
+    padding-left: 3rem;
+    margin: 9rem 8rem 3rem 8rem;
+    color: white;
+    font-size: 18px;
+    font-style: oblique;
+}
+.student{
+    font-size: 28px;
+    font-style: italic;
+    margin-left: 75%;
+    color: #64CCCf;
+}
+#thunder{
+    width: 3rem;
+    height: 3rem;
+}
+#heading>img{
+    position: absolute;
+    left: 15rem;
+    display: inline;
+    width: 60px;
+    height: 60px;
+}
+
+#heading>:nth-child(3){
+    left: 40rem;
+    bottom: -56.5rem;
+    color: #64CCCf;
+}
+.r-blur{
+    width: 10rem;
+    height: 10rem;
+    z-index: 0;
+    margin-top: 7rem;
+    left: 28rem;
+    filter: blur(130px);
+}
+@media screen and (max-width:768px){
+    .r-blur{
+        display: none;
+    }
+    .heading1{
+        text-align: center;
+        margin-bottom: -5rem;
+        font-size: 38px;
+        margin-left: 2rem;
+    }
+    #thunder{
+        width: 2rem;
+        height: 2rem;
+    }
+    .carousel{
+        transform: scale(0.7);
+        display: flex;
+        white-space: wrap;
+        width: 250%;
+        padding: 0;
+      position: relative;
+      left: -14rem;
+    }
+    #btn1{
+        right: 8rem;
+        top: 7rem;
+    }
+    #btn2{
+        left: 9rem;
+        top:7rem
+    }
+    .test{
+        margin-bottom: -15rem;
+    }
+    .student{
+        margin-left:45%;
+    }
+}

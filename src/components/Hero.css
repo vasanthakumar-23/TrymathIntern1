@@ -1,0 +1,237 @@
+html{
+    font-size: 20px;
+}
+body{
+    margin-top: 5rem;
+    margin:0;
+    padding: 0;
+    background-color: rgb(25,26,44);
+}
+.logo{
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-left: 5rem;
+}
+.logo>h1{
+    margin-top: 2rem;
+    font-size: 40px;
+}
+
+ul{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3.5rem;
+    margin-left: 10rem;
+    color: #ffff;
+}
+li:hover{
+    border-bottom: 2px solid #64CCC5;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contact{
+    display: block;
+    width: 5rem ;
+    height: 2rem;
+    margin-top: 2.0rem;
+    margin-right: 2rem;
+    border: 0;
+    font-size: medium;
+    font-style: bold;
+    background-color: #64CCC5;
+    border-radius: 10px;
+}
+#contact:hover{
+     background-color: transparent;
+     border: 2px solid #64CCC5;
+     color:#64CCC5 ;
+}
+.content{
+    position: relative;
+    display: flex;
+    white-space: wrap;
+    flex-direction: row;
+     color: #ffff;
+     padding-left: 4rem;
+     font-size: 2rem;
+     width: 45%;
+}
+.content>h1{
+    margin-right: 11rem;
+    margin-top: 3rem;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.8rem;
+}
+.content>h1>span{
+    display: block;
+    color: #64CCC5;
+    margin-bottom: 1rem;
+}
+
+
+.logo>img{
+    position: absolute;
+    height: 8rem;
+    width: 5rem;
+    left: -3.5rem;
+    top:-0.5rem;
+    transform: scale(1);
+}
+.content>:nth-child(3){
+    position: relative;
+    right: 0rem;
+    height:21rem;
+    width:22rem;
+
+}
+.content>:nth-child(1){
+    position: absolute;
+    left: 28rem;
+    display: block;
+    transform: rotate(30deg);
+    right: 1rem;
+    height:3rem;
+    width:3rem;
+
+}
+
+
+.content>:nth-child(4){
+    position: relative;
+    right: 16rem;
+    height:18rem;
+    width:18rem;
+}
+
+
+#start{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:3rem
+}
+#start>button{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #64CCC5;
+    border: 0;
+    margin: -3rem 0 0 4.3rem;
+    font-size: 20px;
+    color: #ffff;
+    border-radius: 10px;
+
+}
+#start>button:hover{
+    border: 2px solid #64CCC5 ;
+    background-color: transparent;
+}
+#start>a{
+    color: #ffff;
+    margin-top:-2rem;
+    margin-left: -1rem;
+
+}
+.zo{
+margin-top: -4rem;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    gap: 3rem;
+    margin-right: 4rem;
+}
+.zo>div>:nth-child(2){
+    display: block;
+}
+.zo>div>:nth-child(1){
+    font-weight: bolder;
+    font-family:qontra ;
+    color: #64CCC5;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.h-blur{
+   
+    width: 10rem;
+    height: 10rem;
+    left: 8rem;
+    top: 8rem;
+}
+@media screen and (max-width:768px) {
+    h-blur{
+        position: relative;
+        left: 0;
+    }
+    .hero{
+        margin-bottom: 10rem;
+    }
+    .logo{
+        margin-bottom: -2.5rem;
+    }
+    .logo>h1{
+        font-size: 35px;
+        position: relative;
+        top: 1.5rem;
+        left: -5rem;
+        white-space: nowrap;;
+        
+    }
+    .logo>img{
+        position: relative;
+        top: 1rem;
+    }
+    .logo>h1>span{
+        padding-left: 10px;
+       display: inline;
+    }
+    .navbar{
+        display: none;
+    }
+    .content{
+        position: relative;
+        transform: scale(0.65);
+        text-align: center;
+        margin-left: -3rem;
+    }
+    .zo{
+        display: flex;
+       justify-content: flex-start; 
+       transform: scale(0.9);
+       margin-top: -8rem;
+       }
+       #start{
+        position: relative;
+        
+        top: 5.5rem;
+        left: -3rem;
+       }
+       #start>a,button{
+        transform: scale(0.8);
+        padding: 0px;
+        white-space: nowrap;
+       }
+#no{
+    font-size: 45px;
+}
+
+
+
+}

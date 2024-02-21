@@ -1,0 +1,122 @@
+.footer{
+    margin-top: 2rem;
+    height: 60vh;
+  
+}
+.footer>:nth-child(1){
+    border-bottom: 2px solid white;
+}
+.container{
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction:row;
+    gap: 10rem;
+}
+section{
+    font-size: 10px;
+    position: relative;
+    left: -3rem;
+    margin-top: 1.5rem;
+}
+section>h3{
+    font-size: 22px;
+    color:white;
+
+}
+h4>span{
+    font-size: 23px;
+    color:#64CCCf;
+}
+h4{
+    columns: white;
+}
+.logos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5rem;
+    margin-right: 3rem;
+}
+.logos>img{
+    margin: 15px;
+    height:2rem;
+    width: 2rem;
+}
+.contents>p{
+    padding: 0 0;
+    column-gap: 0;
+}
+.contents{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    padding: 3px 0;
+    flex-direction: column;
+    font-size: small;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contents>h5{
+    font-size: 15px;
+    font-style: bold;
+    letter-spacing: 2px;
+}
+.contents>p:hover{
+    font-style: bold;
+    font-size: 15px;
+}
+.f-blur{
+    width: 15rem;
+    height: 15rem;
+    z-index: 0;
+    left: 4rem;
+    margin-top: 3rem;
+    filter: blur(150px);
+}
+.z-blur{
+    width: 15rem;
+    height: 15rem;
+    z-index: 0;
+    right: 0rem;
+    margin-top: 3rem;
+    filter: blur(150px);
+}
+@media screen  and (max-width:768px){
+    .f-blur{
+        display: none;
+    }
+    .footer{
+        transform: scale(0.8);
+        gap: -2rem;
+    }
+    section{
+        display: block;
+        text-align: center;
+        left: 0;
+        margin-top: 8rem;
+    }
+    section>h3>:nth-child(1){
+        display: inline;
+    }
+    .container{
+        flex-direction: column;
+        gap:-0rem;
+        height: 40vh;
+    }
+    .contents{
+        display: none;
+    }
+    .logos{
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        left: 3rem;
+    }
+    .footer>:nth-child(1){
+        width: 130%;
+        position: relative;
+        left: -3rem;
+        top:3rem;
+        margin-top: 15rem;
+        margin-bottom: -3.5rem;
+    }
+}

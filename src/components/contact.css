@@ -1,0 +1,74 @@
+.contacts{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+#contact-us{
+    margin-top: 3rem;
+    color: white;
+}
+#contact-us>h1{
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
+    padding-bottom: 2rem;
+}
+form{
+    margin-top: 1rem;
+}
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    width: 120%;
+    margin-bottom: 2rem;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 25px;
+    height: 4rem;
+}
+input:nth-of-type(1){
+    height: 2.5rem;
+}
+form>p{
+    padding-top: 1rem;
+    color: white;
+    font-size: 12px;
+    white-space: wrap;
+}
+button{
+    margin-bottom: 0;
+    display: inline;
+    background-color: #64cccf;
+    width:4.5rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+@media  screen and (max-width:768px) {
+    #contact-us>p{
+        display: none;
+    }
+   .contacts{
+    margin-top: 5rem;
+    margin-bottom: -12rem;
+   }
+   form>input{
+    width: 95%;
+    transform: scale(0.9);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   }
+   form{
+    text-align: center;
+   }
+   form>p{
+    margin-top: 1rem;
+    transform: scale(0.8);
+   }
+   #contact-us>h1{
+    font-size: 45px;
+    margin-bottom: -1rem;
+    text-align: center;
+   }
+}

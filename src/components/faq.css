@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(25,26,44);
+    margin: 0;
+    padding: 0;
+}
+.faq{
+    margin-top: 6rem;
+    margin-bottom: -4rem;
+    position: relative;
+    bottom: 8rem;
+    height: 90vh;
+    display: grid;
+}
+.faq>h1{
+     font-family: "Bebas Neue", sans-serif;;
+    font-size: 80px;
+    position: relative;
+    left: 18rem;
+    margin-bottom: 7rem;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.answer{
+    display: none;
+    margin-top: 1px;
+}
+.faq>.left>div{
+    margin-left: 7rem;
+    max-width:17rem ;
+    height: 3.5rem;
+    padding: 10px 25px;
+    background-color: white;
+    transition: height 0.5s ease-in;
+
+}
+
+.quest:hover +.answer{
+    margin-top: 15px;
+    display:block;
+
+}
+.faq>.left>div:hover{
+    height: 12.2rem;
+
+}
+.one,.two,.three{
+    height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.left{
+    grid-column: 1/2;
+    margin-left: 3rem;
+}
+.right{
+    margin-top: -17.5rem;
+    grid-column: 2/3;
+    margin-left: 6rem;
+}
+.faq>.right>div{
+    background-color: white;
+    width: 17rem;
+    height:3.5rem ;
+    margin-bottom: 2rem;
+    padding: 10px 25px;
+    transition: height 0.3s ease-in;
+}
+.right>div:hover{
+    height: 12rem;
+}
+.five,.six{
+    height: 2.5rem;
+}
+div>.five:hover{
+    height: 13rem;
+}
+.right>.four:hover{
+    height:7rem;
+}
+.line{
+    border-left: 2px solid #64CCCf;
+    height: 14rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .faq{
+        display: none;
+    }
+}
